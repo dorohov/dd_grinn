@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'a_BodoniNova';
+    src: url('ABodoniNovaBoldItalic.woff2') format('woff2'),
+        url('ABodoniNovaBoldItalic.woff') format('woff'),
+        url('ABodoniNovaBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'a_BodoniNova';
+    src: url('ABodoniNova.woff2') format('woff2'),
+        url('ABodoniNova.woff') format('woff'),
+        url('ABodoniNova.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'a_BodoniNova';
+    src: url('ABodoniNovaBold.woff2') format('woff2'),
+        url('ABodoniNovaBold.woff') format('woff'),
+        url('ABodoniNovaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'a_BodoniNova';
+    src: url('ABodoniNovaItalic.woff2') format('woff2'),
+        url('ABodoniNovaItalic.woff') format('woff'),
+        url('ABodoniNovaItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
