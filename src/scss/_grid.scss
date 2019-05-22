@@ -1,6 +1,57 @@
-.container {
-    max-width: #{1620px + 60px};
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0 auto;
+.__dd {
+    &__container {
+        max-width: #{1620px + 60px};
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0 auto;
+    }
+    &__heading {
+        &.is--on {
+            font-family: 'a_BodoniNova';
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        &.is--tw {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+    &__desc {
+        p {
+            font-size: 18px;
+            color: #dac6ac;
+            margin: 0 0 15px 0;
+            line-height: 20px;
+        }
+    }
+    &__mb30 {
+        margin-bottom: 30px;
+    }
+    &__mb40 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .__dd {
+        &__heading {
+            &.is--on {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            &.is--tw {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        &__desc {
+            p {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
 }
