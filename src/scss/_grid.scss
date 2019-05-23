@@ -18,6 +18,31 @@
             font-size: 24px;
             margin-bottom: 15px;
         }
+        &.is--th {
+            font-size: 72px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            &.is--white {
+                color: #fff;
+            }
+            &.is--black {
+                color: #212431;
+            }
+            &.is--bg {
+                position: relative;
+                &::after {
+                    content: attr(data-text);
+                    position: absolute;
+                    left: 0;
+                    opacity: .1;
+                    font-family: 'a_BodoniNova';
+                    font-size: 150px;
+                    font-weight: bold;
+                    bottom: -20px;
+                    line-height: 140px;
+                }
+            }
+        }
     }
     &__desc {
         p {
@@ -45,6 +70,16 @@
             &.is--tw {
                 font-size: 20px;
                 margin-bottom: 10px;
+            }
+            &.is--th {
+                font-size: 36px;
+                margin-bottom: 20px;
+                &.is--bg {
+                    &::after {
+                        font-size: 60px;
+                        line-height: 90px;
+                    }
+                }
             }
         }
         &__desc {
