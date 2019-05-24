@@ -51,6 +51,11 @@
             margin: 0 0 15px 0;
             line-height: 20px;
         }
+        &.is--dark {
+            p {
+                color: #212431;
+            }
+        }
     }
     &__mb30 {
         margin-bottom: 30px;

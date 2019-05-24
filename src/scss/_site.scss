@@ -254,6 +254,7 @@
                 &__bottom {
                     &__carousel {
                         position: relative;
+                        padding-top: 2vw;
                         &::after {
                             background-image: url(../../img/gb_mac.png);
                             background-size: contain;
@@ -267,8 +268,6 @@
                             left: 50%;
                             transform: translateX(-50%);
                             top: 0;
-                            width: 50vw;
-                            height: 50vh;
                         }
                         &__item {
                             img {
@@ -279,6 +278,52 @@
                             outline: none;
                         }
                     }
+                }
+            }
+        }
+        &.__dd__is--s7 {
+            position: relative;
+            .__dd__slide {
+                &__hand {
+                    position: absolute;
+                    top: -150px;
+                    left: 0;
+                    max-width: 800px;
+                    width: 100%;
+                    @media (max-width: 1660px) {
+                        max-width: 500px;
+                        top: -100px;
+                    }
+                    @media (max-width: 1660px) {
+                        max-width: 350px;
+                        top: -70px;
+                    }
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.__dd__is--s8 {
+            background-color: #cbc6c6;
+            min-height: 100vh;
+            background-image: url(../../img/s8_mock.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: 80%;
+            padding: 100px 0;
+            .__dd__slide {
+                &__inner {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    min-height: calc(100vh - 200px);
+                }
+                &__inner {
+                    display: flex;
+                }
+                &__left {
+                    max-width: 490px;
                 }
             }
         }
