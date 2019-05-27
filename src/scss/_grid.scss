@@ -63,6 +63,21 @@
     &__mb40 {
         margin-bottom: 40px;
     }
+    &__btn {
+        background: #E91044;
+        transition: .35s all ease;
+        color: #000;
+        font-size: 18px;
+        border-radius: 3px;
+        padding: 18px 30px;
+        line-height: 18px;
+        display: inline-block;
+        outline: none;
+        border: none;
+        &:hover {
+            background: #5BDDF9;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -79,6 +94,7 @@
             &.is--th {
                 font-size: 36px;
                 margin-bottom: 20px;
+                line-height: 26px;
                 &.is--bg {
                     &::after {
                         font-size: 60px;

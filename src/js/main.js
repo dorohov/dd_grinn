@@ -10,7 +10,6 @@
 
         $(window).resize(function() {
             setMockupSize()
-            console.log('adsd')
         })
 
         setMockupSize()
