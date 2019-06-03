@@ -267,15 +267,90 @@
                             position: absolute;
                             left: 50%;
                             transform: translateX(-50%);
-                            top: 0;
+                            top: -4px;
+                            @media (max-width: 500px) {
+                                top: 0;
+                            }
                         }
                         &__item {
                             img {
                                 padding: 0 100px;
+                                @media (max-width: 1200px) {
+                                    padding: 0 30px;
+                                }
+                                @media (max-width: 500px) {
+                                    padding: 0 15px;
+                                }
                             }
                         }
                         .slick-slide {
                             outline: none;
+                        }
+                    }
+                    .slick-dots {
+                        padding-top: 8vw;
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 999;
+                        @media (max-width: 1200px) {
+                            padding-top: 10vw;
+                        }
+                        @media (max-width: 768px) {
+                            padding-top: 13vw;
+                            li {
+                                margin: 0 8px;
+                                button {
+                                    width: 15px !important;
+                                    height: 15px !important;
+                                    &::after {
+                                        width: 19px !important;
+                                        height: 19px !important;
+                                        left: -2px !important;
+                                        top: -2px !important;
+                                    }
+                                }
+                            }
+                        }
+                        li {
+                            margin: 0 12px;
+                            button {
+                                color: transparent;
+                                border: none;
+                                border-radius: 100%;
+                                width: 25px;
+                                height: 25px;
+                                background: #0E6740;
+                                outline: none;
+                                cursor: pointer;
+                                transition: .25s all ease;
+                                position: relative;
+                                &::after {
+                                    position: absolute;
+                                    width: 31px;
+                                    height: 31px;
+                                    content: '';
+                                    display: block;
+                                    background: transparent;
+                                    border: 1px solid #f7b941;
+                                    border-radius: 100%;
+                                    left: -3px;
+                                    top: -3px;
+                                    opacity: 0;
+                                    transition: .25s all ease;
+                                }
+                                &:hover {
+                                    background: #f7b941;
+                                }
+                            }
+                            &.slick-active {
+                                button {
+                                    background: #f7b941;
+                                    &::after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -728,6 +803,9 @@
                         display: none;
                     }
                 }
+            }
+            &.__dd__is--s6 {
+                padding: 40px 0;
             }
             &.__dd__is--s9 {
                 padding-top: 50px;

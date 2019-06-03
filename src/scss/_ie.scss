@@ -1,3 +1,8 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    
+    .__dd__slide__bottom {
+        display: none;
+    }
+    .__dd__slide__right img {
+        width: 100% !important;
+    }
 }
