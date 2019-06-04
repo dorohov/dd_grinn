@@ -748,9 +748,10 @@
                         &__icons {
                             flex-wrap: wrap;
                             padding-top: 0;
+                            margin: 0 -10px;
                         }
                         &__icon {
-                            padding: 25px;
+                            padding: 25px 10px;
                         }
                     }
                 }
